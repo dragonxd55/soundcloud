@@ -21,7 +21,7 @@ fs.readFile("config.json", (err, data) => {
 	
 	try {
 		configObject = JSON.parse(data);
-		bot = new Eris(configObject.discordToken);
+		bot = new Eris(process.env.BOT_TOKEN);
 		SC_CLIENT_ID = configObject.soundcloudId;
         owners = configObject.owners;
         mods = configObject.mods;
