@@ -4,6 +4,7 @@
 	"main": "index.js",
 	"dependencies": {
 		"eris": "github:abalabahaha/eris#dev",
+                "discord.js": "11.1.0",
 		"youtube-dl": "^1.11.1",
                 "request": "2.81.0"
 	}
