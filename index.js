@@ -1,8 +1,21 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const Eris = require('eris');
 const youtubedl = require('youtube-dl');
 const urlHelper = require('url');
 const request = require('request');
 const fs = require('fs');
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
 
 let configObject;
 let bot;
@@ -384,3 +397,4 @@ function main() {
 		}
 	});
 }
+client.login(process.env.BOT_TOKEN);
