@@ -1,5 +1,4 @@
 {
-	"discordToken": process.env.BOT_TOKEN;
 	"soundcloudId": "Your soundcloud API ID here (optional)",
 	"owners": [
 		"234454368072630283"
